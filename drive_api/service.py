@@ -61,11 +61,6 @@ class Service(object):
         return file.get('id')
 
 
-if __name__ == '__main__':
-    service = Service()
-    #service.get_results()
-    folder_id = service.create_folder('zuck_thumbnails')
-    folder_id = '9tcjTyAhjJ2G7VrlgLbiiMiac4c6V6XC'
-    print(folder_id)
+
 
 

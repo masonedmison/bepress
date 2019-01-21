@@ -13,3 +13,6 @@ body_grab/
 #google creds
 drive_api/credentials.json
 drive_api/token.pickle
+
+#thumbnails
+thumbnails/
