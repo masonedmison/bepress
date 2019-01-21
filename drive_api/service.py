@@ -1,9 +1,4 @@
 from __future__ import print_function
-import pickle
-import os.path
-from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
-from google.auth.transport.requests import Request
 from drive_api.auth import Auth
 from googleapiclient.http import MediaFileUpload
 
@@ -12,7 +7,7 @@ from googleapiclient.http import MediaFileUpload
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
 
-class DriveService(object):
+class Service(object):
     def __init__(self):
         auth = Auth(SCOPES)
         self.service = auth.get_service()
@@ -67,7 +62,7 @@ class DriveService(object):
 
 
 if __name__ == '__main__':
-    service = DriveService()
+    service = Service()
     #service.get_results()
     folder_id = service.create_folder('zuck_thumbnails')
     folder_id = '9tcjTyAhjJ2G7VrlgLbiiMiac4c6V6XC'
