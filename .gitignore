@@ -1,0 +1,13 @@
+#xls files
+xls/
+
+#file-lists
+pdf_file_list.txt
+
+#testing_file
+author_parser_isolate.py
+
+#pdf_files_folder
+body_grab/
+
+
