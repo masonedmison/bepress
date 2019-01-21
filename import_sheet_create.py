@@ -40,6 +40,7 @@ promotional
 news report
  congressional hearing
     """
+    
     type_mapping = {'article': 'article', 'interview': 'video_interview', 'social media post': 'blog', 'book': 'editorial',
                     'correspondence': 'press', 'speech': 'conference', 'editorial': 'editorial',
                     'corporate communication': 'financial_comm', 'promotional': 'press', 'news': 'news',
@@ -83,7 +84,7 @@ def author_parser(participants, dc, length):
 
 def write_to_xls(dc_modified):
     to_xls = pd.DataFrame(dc_modified)
-    to_xls.to_excel('missed_dc_bulk_import.xls', sheet_name='Sheet 1')
+    to_xls.to_excel('xls/missed_dc_bulk_import.xls', sheet_name='Sheet 1')
 
 
 def write_list_of_pdf_files_needed(pdf_file_list):
@@ -92,13 +93,9 @@ def write_list_of_pdf_files_needed(pdf_file_list):
             pdf_list.write('{}, '.format(file))
 
 
-
-
-
-
-def main():
-    all_master = dict(pd.read_excel('ALL_ZFWP.xls'))
-    dc_text_import = dict(pd.read_excel('dc_bulk_import.xls'))
+if __name__ == '__main__':
+    all_master = dict(pd.read_excel('xls/ALL_ZFWP.xls'))
+    dc_text_import = dict(pd.read_excel('xls/dc_bulk_import.xls'))
 
     print(len(dc_text_import['title'].tolist()))
 
@@ -119,10 +116,6 @@ def main():
     write_to_xls(dc_text_import)
     print(len(dc_text_import['title'].tolist()))
     write_list_of_pdf_files_needed(pdf_file_list)
-
-
-if __name__ == '__main__':
-    main()
 
 
 

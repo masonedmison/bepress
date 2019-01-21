@@ -10,10 +10,10 @@ import pandas as pd
 #
 # joined.to_excel('master_DC_with_ID.xls')
 
-links = pd.DataFrame(pd.read_excel('BePress_fulltext_links.xlsx'))
-master_DC = pd.DataFrame(pd.read_excel('master_DC_with_ID.xls'))
+links = pd.DataFrame(pd.read_excel('xls/BePress_fulltext_links.xlsx'))
+master_DC = pd.DataFrame(pd.read_excel('xls/master_DC_with_ID.xls'))
 
 merged = pd.merge(master_DC, links, on='Record ID')
 
-merged.to_excel('DRIVE_master_DC_with_ID.xls')
+merged.to_excel('xls/DRIVE_master_DC_with_ID.xls')
 

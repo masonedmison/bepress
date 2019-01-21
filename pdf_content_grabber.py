@@ -26,7 +26,7 @@ def create_pdf_minus_cover_page(filename):
     pdfOut.close()
 
 
-def main():
+if __name__ == '__main__':
     filenames_no_ext = get_files_names()
 
     for file in filenames_no_ext:
@@ -36,6 +36,3 @@ def main():
         except FileNotFoundError:
             print('file not found for {}'.format(file))
 
-
-if __name__ == '__main__':
-    main()
