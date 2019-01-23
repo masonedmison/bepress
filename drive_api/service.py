@@ -45,14 +45,14 @@ class Service(object):
                                             fields='id').execute()
         return 'Folder ID: %s' % file.get('id')
 
-    def insert_to_folder(self, folder_id, file_name, file_path):
+    def insert_to_folder(self, folder_id, file_name, file_path, mimetype):
         folder_id = folder_id
         file_metadata = {
             'name': file_name,
             'parents': [folder_id]
         }
         media = MediaFileUpload(file_path,
-                                mimetype='image/jpeg',
+                                mimetype=mimetype,
                                 resumable=True)
         file = self.service.files().create(body=file_metadata,
                                             media_body=media,

@@ -11,8 +11,8 @@ author_parser_isolate.py
 body_grab/
 
 #google creds
-drive_api/credentials.json
-drive_api/token.pickle
+credentials.json
+token.pickle
 
 #thumbnails
 thumbnails/
