@@ -52,12 +52,14 @@ if __name__ == '__main__':
                 for thumb in thumbnail:
                     if thumb.endswith('.png'):
                         file_id = service.insert_to_folder(folder_id, record_id, "thumbnails/{}".format(thumb), 'image/png')
+                        joined['cover_image_url'][index] = build_drive_link(file_id)
                         break
                     elif thumb.endswith('.jpg'):
                         file_id = service.insert_to_folder(folder_id, record_id, "thumbnails/{}".format(thumb), 'image/jpeg')
+                        joined['cover_image_url'][index] = build_drive_link(file_id)
                         break
 
-                    joined['cover_image_url'][index] = build_drive_link(file_id)
+
             else:
                 print('No thumbnail image found for {}'.format(record_id))
         else:
