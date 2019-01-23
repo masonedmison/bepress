@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0101487e-7fb1-40f1-aaa9-6d6315b36305" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/video_sheet_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/video_sheet_build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credentials.json" beforeDir="false" afterPath="$PROJECT_DIR$/credentials.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,15 +46,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="credentials.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/credentials.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="service.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drive_api/service.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="video_sheet_build.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="video_sheet_build.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video_sheet_build.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
@@ -75,6 +66,15 @@
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="credentials.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/credentials.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="436" selection-start-column="436" selection-end-column="436" />
             </state>
           </provider>
         </entry>
@@ -119,6 +119,7 @@
         <option value="$PROJECT_DIR$/drive_api/service.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/video_sheet_build.py" />
+        <option value="$PROJECT_DIR$/credentials.json" />
       </list>
     </option>
   </component>
@@ -143,6 +144,11 @@
             <path>
               <item name="bepress_import_create" type="b2602c69:ProjectViewProjectNode" />
               <item name="bepress_import_create" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bepress_import_create" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bepress_import_create" type="462c0819:PsiDirectoryNode" />
+              <item name="drive_api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bepress_import_create" type="b2602c69:ProjectViewProjectNode" />
@@ -302,11 +308,11 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16953126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16953126" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827586" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32827586" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -607,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/credentials.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/append_record_id.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -655,6 +654,13 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/credentials.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="436" selection-start-column="436" selection-end-column="436" />
         </state>
       </provider>
     </entry>
