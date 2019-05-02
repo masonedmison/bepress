@@ -5,7 +5,6 @@ import re
 from drive_api.service import Service
 
 
-
 def merge_record_id():
     '''appends record id to digital commons xls sheet'''
     vid_dc = pd.DataFrame(pd.read_excel('xls/VID_DC_REVISE.xls'))

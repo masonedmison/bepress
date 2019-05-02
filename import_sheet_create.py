@@ -19,6 +19,7 @@ def map_master_to_dc(master, dc, index):
     dc['abstract'][length] = '<p>' + master['Description'][index] + '</p>'
     dc['publication_date'][length] = pd.Timestamp(master['Date'][index])
     dc['disciplines'][length] = 'Communication Technology and New Media'
+    dc['fulltext_url'][length] = str(master['UURL'][index])
 
     author_parser(master['Participants'][index], dc, length)
 
@@ -94,8 +95,8 @@ def write_list_of_pdf_files_needed(pdf_file_list):
 
 
 if __name__ == '__main__':
-    all_master = dict(pd.read_excel('xls/ALL_ZFWP.xls'))
-    dc_text_import = dict(pd.read_excel('xls/dc_bulk_import.xls'))
+    all_master = dict(pd.read_excel('xls/missing_with_links.xls'))
+    dc_text_import = dict(pd.read_excel('xls/1_dc_bulk_import.xls'))
 
     print(len(dc_text_import['title'].tolist()))
 
@@ -115,7 +116,7 @@ if __name__ == '__main__':
                 pass
     write_to_xls(dc_text_import)
     print(len(dc_text_import['title'].tolist()))
-    write_list_of_pdf_files_needed(pdf_file_list)
+   # write_list_of_pdf_files_needed(pdf_file_list)
 
 
 
